@@ -2,6 +2,8 @@ plugins {
 //    id 'com.android.application'
     id 'com.android.library'
     id 'org.jetbrains.kotlin.android'
+    id 'maven-publish'
+
 }
 
 android {
@@ -42,4 +44,17 @@ dependencies {
     androidTestImplementation 'androidx.test.espresso:espresso-core:3.5.1'
     implementation("com.google.android.play:app-update-ktx:2.1.0")
 
+}
+afterEvaluate {
+    publishing {
+        publications {
+            release(MavenPublication) {
+                from components.release
+
+                groupId = 'com.github.saurabhthesuperhero'
+                artifactId = 'InAppUpdate-Kotlin-Lib'
+                version = '5.0.0'
+            }
+        }
+    }
 }
