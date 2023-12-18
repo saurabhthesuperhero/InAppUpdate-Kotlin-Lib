@@ -7,14 +7,14 @@ plugins {
 }
 
 android {
-    namespace 'com.simplifymindfulness.inappupdate_library'
+    namespace 'com.simplifymindfulness.inappupdatelibrary'
     compileSdk 34
 
     defaultConfig {
         minSdk 23
         targetSdk 34
-        versionCode 7
-        versionName "7.0"
+        versionCode 8
+        versionName "8.0"
 
         testInstrumentationRunner "androidx.test.runner.AndroidJUnitRunner"
     }
@@ -53,7 +53,7 @@ afterEvaluate {
 
                 groupId = 'com.github.saurabhthesuperhero'
                 artifactId = 'inappupdatelibrary'
-                version = '7.0.0'
+                version = '8.0.0'
             }
         }
     }
