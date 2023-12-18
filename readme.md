@@ -1,5 +1,4 @@
-Creating a comprehensive `README.md` file for your In-App Update Library is crucial for making it accessible and understandable to potential users. This file should include an introduction to the library, setup instructions, usage examples, and any other relevant information. Here's a template for your library's README:
-
+![Build Status](https://img.shields.io/badge/build-passing-brightgreen) ![License](https://img.shields.io/badge/license-MIT-blue) ![Release Version](https://img.shields.io/badge/release-v8.0.2-blue)
 ---
 
 # In-App Update Library for Android
@@ -14,6 +13,12 @@ The In-App Update Library simplifies the integration of in-app updates in Androi
 - Supports immediate update flows.
 - Simplified API for checking and starting updates.
 
+## Demo
+
+<img src="https://github.com/saurabhthesuperhero/InAppUpdate-Kotlin-Lib/assets/40573988/e1f96543-5e01-45bb-9c69-de66f78d63a7" width="200"/>
+<img src="https://github.com/saurabhthesuperhero/InAppUpdate-Kotlin-Lib/assets/40573988/7ea12053-75af-4cf9-9d7c-9908a7055c24" width="200"/>
+<img src="https://github.com/saurabhthesuperhero/InAppUpdate-Kotlin-Lib/assets/40573988/a5059a86-0f30-47c7-a746-563899f13260" width="200"/>
+
 ## Getting Started
 
 ### Prerequisites
@@ -21,15 +26,34 @@ The In-App Update Library simplifies the integration of in-app updates in Androi
 - Android Studio
 - An Android project with minimum SDK version 23.
 
-### Installation
+## Installation
 
-To use the In-App Update Library in your project, add the following dependency to your `build.gradle` file:
+To use the In-App Update Library in your project, follow these steps:
+
+### Step 1: Add the JitPack repository to your build file
+
+Add JitPack to your project's build file. Open your root `build.gradle` file and add the following to the `repositories` section:
 
 ```gradle
-implementation 'com.github.YourUsername:InAppUpdateLibrary:1.0'
+allprojects {
+    repositories {
+        ...
+        maven { url 'https://jitpack.io' }
+    }
+}
 ```
 
-Replace `YourUsername` with your GitHub username and `1.0` with the latest library version.
+### Step 2: Add the dependency
+
+Next, add the dependency for the In-App Update Library in your module's `build.gradle` file:
+
+```gradle
+dependencies {
+    implementation 'com.github.saurabhthesuperhero:InAppUpdate-Kotlin-Lib:8.0.2'
+}
+```
+
+After these steps, sync your project with the Gradle files to ensure that the library is properly imported into your project.
 
 ### Usage
 
