@@ -17,6 +17,15 @@ object InAppUpdateManager {
     private lateinit var appUpdateManager: AppUpdateManager
     private lateinit var activityResultLauncher: ActivityResultLauncher<IntentSenderRequest>
 
+    /**
+     * Initializes the In-App Update Manager.
+     *
+     * @param activity The activity context used to create the AppUpdateManager.
+     * @param launcher The ActivityResultLauncher to handle the update flow result.
+     *
+     * Call this function to initialize the update manager which will check for updates.
+     */
+
     fun init(activity: Activity, launcher: ActivityResultLauncher<IntentSenderRequest>) {
         appUpdateManager = AppUpdateManagerFactory.create(activity)
         activityResultLauncher = launcher
