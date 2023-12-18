@@ -13,8 +13,8 @@ android {
     defaultConfig {
         minSdk 23
         targetSdk 34
-        versionCode 6
-        versionName "6.0"
+        versionCode 7
+        versionName "7.0"
 
         testInstrumentationRunner "androidx.test.runner.AndroidJUnitRunner"
     }
@@ -52,8 +52,8 @@ afterEvaluate {
                 from components.release
 
                 groupId = 'com.github.saurabhthesuperhero'
-                artifactId = 'InAppUpdate-Kotlin-Lib'
-                version = '6.0.0'
+                artifactId = 'inappupdatelibrary'
+                version = '7.0.0'
             }
         }
     }
