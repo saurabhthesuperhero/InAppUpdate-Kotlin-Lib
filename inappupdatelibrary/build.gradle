@@ -52,8 +52,8 @@ afterEvaluate {
                 from components.release
 
                 groupId = 'com.github.saurabhthesuperhero'
-                artifactId = 'inappupdatelibrary'
-                version = '8.0.0'
+                artifactId = 'InAppUpdate-Kotlin-Lib'
+                version = '8.0.1'
             }
         }
     }
